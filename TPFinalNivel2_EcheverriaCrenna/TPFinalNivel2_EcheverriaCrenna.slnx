@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="modelo/modelo.csproj" Id="31dc7586-6358-4b9b-87ee-7b875217b8ac" />
+  <Project Path="negocio/negocio.csproj" Id="dce122ab-22c5-4006-a411-a82df679d6d2" />
+  <Project Path="vista/vista.csproj" Id="7c04bc93-da50-40ac-92dc-55663c8b69b8" />
+</Solution>
