@@ -30,6 +30,7 @@
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmListado));
             this.dgvListado = new System.Windows.Forms.DataGridView();
             this.pbxImagen = new System.Windows.Forms.PictureBox();
             this.btnAgregar = new System.Windows.Forms.Button();
@@ -55,9 +56,6 @@
             this.dgvListado.AllowUserToDeleteRows = false;
             this.dgvListado.AllowUserToResizeColumns = false;
             this.dgvListado.AllowUserToResizeRows = false;
-            this.dgvListado.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvListado.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dgvListado.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dgvListado.BackgroundColor = System.Drawing.Color.DimGray;
@@ -82,13 +80,13 @@
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvListado.DefaultCellStyle = dataGridViewCellStyle2;
             this.dgvListado.EnableHeadersVisualStyles = false;
-            this.dgvListado.Location = new System.Drawing.Point(12, 40);
+            this.dgvListado.Location = new System.Drawing.Point(13, 59);
             this.dgvListado.MultiSelect = false;
             this.dgvListado.Name = "dgvListado";
             this.dgvListado.ReadOnly = true;
             this.dgvListado.RowHeadersVisible = false;
             this.dgvListado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvListado.Size = new System.Drawing.Size(762, 400);
+            this.dgvListado.Size = new System.Drawing.Size(761, 400);
             this.dgvListado.TabIndex = 0;
             this.dgvListado.SelectionChanged += new System.EventHandler(this.dgvListado_SelectionChanged);
             // 
@@ -96,20 +94,20 @@
             // 
             this.pbxImagen.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbxImagen.Location = new System.Drawing.Point(780, 38);
+            this.pbxImagen.Location = new System.Drawing.Point(695, 57);
             this.pbxImagen.Name = "pbxImagen";
-            this.pbxImagen.Size = new System.Drawing.Size(246, 402);
+            this.pbxImagen.Size = new System.Drawing.Size(246, 359);
             this.pbxImagen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbxImagen.TabIndex = 1;
             this.pbxImagen.TabStop = false;
             // 
             // btnAgregar
             // 
-            this.btnAgregar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnAgregar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnAgregar.BackColor = System.Drawing.Color.MediumPurple;
             this.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnAgregar.Font = new System.Drawing.Font("Unispace", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregar.Location = new System.Drawing.Point(762, 446);
+            this.btnAgregar.Location = new System.Drawing.Point(676, 431);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(84, 32);
             this.btnAgregar.TabIndex = 0;
@@ -119,11 +117,11 @@
             // 
             // btnModificar
             // 
-            this.btnModificar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnModificar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnModificar.BackColor = System.Drawing.Color.MediumPurple;
             this.btnModificar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnModificar.Font = new System.Drawing.Font("Unispace", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnModificar.Location = new System.Drawing.Point(852, 446);
+            this.btnModificar.Location = new System.Drawing.Point(766, 431);
             this.btnModificar.Name = "btnModificar";
             this.btnModificar.Size = new System.Drawing.Size(84, 32);
             this.btnModificar.TabIndex = 1;
@@ -133,11 +131,11 @@
             // 
             // btnEliminar
             // 
-            this.btnEliminar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnEliminar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnEliminar.BackColor = System.Drawing.Color.MediumPurple;
             this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnEliminar.Font = new System.Drawing.Font("Unispace", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEliminar.Location = new System.Drawing.Point(942, 446);
+            this.btnEliminar.Location = new System.Drawing.Point(857, 431);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(84, 32);
             this.btnEliminar.TabIndex = 2;
@@ -170,7 +168,7 @@
             this.lblCampo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lblCampo.AutoSize = true;
             this.lblCampo.Font = new System.Drawing.Font("Unispace", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCampo.Location = new System.Drawing.Point(14, 534);
+            this.lblCampo.Location = new System.Drawing.Point(14, 491);
             this.lblCampo.Name = "lblCampo";
             this.lblCampo.Size = new System.Drawing.Size(49, 14);
             this.lblCampo.TabIndex = 5;
@@ -181,7 +179,7 @@
             this.lblCriterio.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lblCriterio.AutoSize = true;
             this.lblCriterio.Font = new System.Drawing.Font("Unispace", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCriterio.Location = new System.Drawing.Point(185, 534);
+            this.lblCriterio.Location = new System.Drawing.Point(185, 491);
             this.lblCriterio.Name = "lblCriterio";
             this.lblCriterio.Size = new System.Drawing.Size(70, 14);
             this.lblCriterio.TabIndex = 7;
@@ -192,7 +190,7 @@
             this.lblFiltro.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lblFiltro.AutoSize = true;
             this.lblFiltro.Font = new System.Drawing.Font("Unispace", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFiltro.Location = new System.Drawing.Point(377, 534);
+            this.lblFiltro.Location = new System.Drawing.Point(377, 491);
             this.lblFiltro.Name = "lblFiltro";
             this.lblFiltro.Size = new System.Drawing.Size(56, 14);
             this.lblFiltro.TabIndex = 9;
@@ -202,7 +200,7 @@
             // 
             this.txtFiltro.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.txtFiltro.BackColor = System.Drawing.Color.Gainsboro;
-            this.txtFiltro.Location = new System.Drawing.Point(439, 531);
+            this.txtFiltro.Location = new System.Drawing.Point(439, 488);
             this.txtFiltro.Name = "txtFiltro";
             this.txtFiltro.Size = new System.Drawing.Size(110, 20);
             this.txtFiltro.TabIndex = 10;
@@ -213,7 +211,7 @@
             this.btnBuscar.BackColor = System.Drawing.Color.MediumPurple;
             this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnBuscar.Font = new System.Drawing.Font("Unispace", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBuscar.Location = new System.Drawing.Point(577, 528);
+            this.btnBuscar.Location = new System.Drawing.Point(577, 485);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(75, 23);
             this.btnBuscar.TabIndex = 11;
@@ -227,7 +225,7 @@
             this.cbxCriterio.BackColor = System.Drawing.Color.Gainsboro;
             this.cbxCriterio.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbxCriterio.FormattingEnabled = true;
-            this.cbxCriterio.Location = new System.Drawing.Point(261, 531);
+            this.cbxCriterio.Location = new System.Drawing.Point(261, 488);
             this.cbxCriterio.Name = "cbxCriterio";
             this.cbxCriterio.Size = new System.Drawing.Size(110, 21);
             this.cbxCriterio.TabIndex = 12;
@@ -238,7 +236,7 @@
             this.cbxCampo.BackColor = System.Drawing.Color.Gainsboro;
             this.cbxCampo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbxCampo.FormattingEnabled = true;
-            this.cbxCampo.Location = new System.Drawing.Point(69, 530);
+            this.cbxCampo.Location = new System.Drawing.Point(69, 487);
             this.cbxCampo.Name = "cbxCampo";
             this.cbxCampo.Size = new System.Drawing.Size(110, 21);
             this.cbxCampo.TabIndex = 13;
@@ -250,7 +248,7 @@
             this.btnLimpiar.BackColor = System.Drawing.Color.MediumPurple;
             this.btnLimpiar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnLimpiar.Font = new System.Drawing.Font("Unispace", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLimpiar.Location = new System.Drawing.Point(658, 528);
+            this.btnLimpiar.Location = new System.Drawing.Point(658, 485);
             this.btnLimpiar.Name = "btnLimpiar";
             this.btnLimpiar.Size = new System.Drawing.Size(75, 23);
             this.btnLimpiar.TabIndex = 14;
@@ -263,7 +261,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DimGray;
-            this.ClientSize = new System.Drawing.Size(1038, 563);
+            this.ClientSize = new System.Drawing.Size(953, 520);
             this.Controls.Add(this.btnLimpiar);
             this.Controls.Add(this.cbxCampo);
             this.Controls.Add(this.cbxCriterio);
@@ -279,6 +277,9 @@
             this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.pbxImagen);
             this.Controls.Add(this.dgvListado);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximumSize = new System.Drawing.Size(1071, 647);
+            this.MinimumSize = new System.Drawing.Size(828, 452);
             this.Name = "frmListado";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Gestor de Articulo";
